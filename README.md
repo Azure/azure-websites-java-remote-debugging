@@ -17,7 +17,7 @@ Enable ‘web sockets’ on your azure website
 ------------------------------------------
 
 
-![alt IMAGEONE](http://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Tomcat-logo.svg/300px-Tomcat-logo.svg.png)
+![alt IMAGEONE](![alt tag](https://raw.github.com/Azure/azure-websites-java-remote-debugging/images/azure_websites_enable_websockets.png))
 
 
 Enable debugging in web.config
@@ -61,7 +61,7 @@ Example:
 *DebugSession.bat –p 8000 –s yoursite.scm.azurewebsites.net –u deploymentUserName –w deploymentPassword –t*
 
 
-![alt IMAGETWO](http://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Tomcat-logo.svg/300px-Tomcat-logo.svg.png)
+![alt IMAGETWO](https://raw.github.com/Azure/azure-websites-java-remote-debugging/images/DebugSession.png)
 
 
 You could specify the Affinity cookie value to hit a specific instance of your site if your site is configured to run on multiple workers and you want to debug a specific instance.
@@ -69,13 +69,13 @@ You could specify the Affinity cookie value to hit a specific instance of your s
 Connect eclipse debugger to your DebugSession
 
 
-![alt IMAGETHREE](http://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Tomcat-logo.svg/300px-Tomcat-logo.svg.png)
+![alt IMAGETHREE](https://raw.github.com/Azure/azure-websites-java-remote-debugging/images/eclipse_debugconfig.png)
 
 
 Click “Remote Java Application”, enter the port on which you started DebugSession.bat and then click ‘Debug’.
 
 
-![alt IMAGEFOUR](http://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Tomcat-logo.svg/300px-Tomcat-logo.svg.png)
+![alt IMAGEFOUR](https://raw.github.com/Azure/azure-websites-java-remote-debugging/images/eclipse_remote_debug.png)
 
 
 
