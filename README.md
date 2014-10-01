@@ -4,7 +4,7 @@
 Remote Debugging Java Web Applications on Microsoft Azure Websites
 ==================================================================
 
-Recently we have added the support for running Java Web Applications on Microsoft Azure websites. This blog describes the support for remote debugging your Java Web Applications on Microsoft Azure Websites.
+Microsoft Azure websites supports running Java Web Applications. This blog describes the support for remote debugging your Java Web Applications on Microsoft Azure Websites.
 
 **Prerequisites**
 * Azure website with a Java Web Application with a web.config that enables JVM debug server.
