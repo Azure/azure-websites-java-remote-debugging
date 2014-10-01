@@ -83,5 +83,5 @@ Click “Remote Java Application”, enter the port on which you started DebugSe
 **References**
 * [Getting Started with Java Web Applications on Azure Websites](http://azure.microsoft.com/en-us/documentation/articles/web-sites-java-get-started/)
 * [Sample HelloWorld java web application with web.config](https://github.com/rramachand21/jaws/tree/master/HelloWorld)
-* [Configuring custom web container on Azure websites](C:\Users\ccompy\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\IN0Z6FOE\azure.microsoft.com\en-us\documentation\articles\web-sites-java-custom-upload)
+* [Configuring custom web container on Azure websites](http://azure.microsoft.com/en-us/documentation/articles/web-sites-java-custom-upload/)
 
