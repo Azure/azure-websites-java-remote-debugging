@@ -17,7 +17,7 @@ Enable ‘web sockets’ on your azure website
 ------------------------------------------
 
 
-![alt IMAGEONE](![alt tag](https://github.com/Azure/azure-websites-java-remote-debugging/blob/master/images/azure_websites_enable_websockets.png))
+![alt IMAGEONE](https://github.com/Azure/azure-websites-java-remote-debugging/blob/master/images/enable_websockets.png)
 
 
 Enable debugging in web.config
