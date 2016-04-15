@@ -11,6 +11,8 @@ Microsoft Azure websites supports running Java Web Applications. This blog descr
 * Enable websockets on your azure web site.
 * JDWP compatible debugger like Eclipse/Netbeans.
 * DebugSession Client application (your debugger will connect to this client application).
+* Modify Eclipse Remote Debugging Timeout. Open Eclipse and Go to -> Windows -> Preferences -> Debug ->
+	- Increase Debugger Timeout (ms) and Launch timeout (ms) to 120000.
 
 
 Enable ‘web sockets’ on your azure website
