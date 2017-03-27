@@ -30,10 +30,10 @@ If you already have web.config in your azure website site\wwwroot, add the follo
 As shown below:
 
 ```
-<httpPlatform … >
-	<environmentVariables>
-	<environmentVariable name="JAVA_OPTS" value="-Djava.net.preferIPv4Stack=true -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=127.0.0.1:%HTTP_PLATFORM_DEBUG_PORT%">
-	<environmentVariables>
+<httpPlatform>
+            <environmentVariables>
+                <environmentVariable name="JAVA_OPTS" value="-Djava.net.preferIPv4Stack=true -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=127.0.0.1:%HTTP_PLATFORM_DEBUG_PORT%"/>
+            </environmentVariables>
 </httpPlatform>
 ```
 
