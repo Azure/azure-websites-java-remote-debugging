@@ -62,11 +62,18 @@ usage: org.azure.waws.DebugSessionMain
 Example:
 *DebugSession.bat –p 8000 –s yoursite.scm.azurewebsites.net –u deploymentUserName –w deploymentPassword –t*
 
+You could specify the Affinity cookie value to hit a specific instance of your site if your site is configured to run on multiple workers and you want to debug a specific instance.
 
 ![alt IMAGETWO](https://github.com/Azure/azure-websites-java-remote-debugging/blob/master/images/DebugSession.png)
 
+IMPORTANT NOTE
+---------------
+When connecting to your azure app service scm endpoint, please use credentials associated with publishMethod="MSDeploy". To get this, get the publish profile by doing the following:
 
-You could specify the Affinity cookie value to hit a specific instance of your site if your site is configured to run on multiple workers and you want to debug a specific instance.
+In the Azure portal, click App Service > <your_app> > Overview.
+
+Click ...More > Get publish profile, and download starts for a .PublishSettings file. Use the username and password associated with the "MSDeploy" publishMethod. 
+
 
 Connect eclipse debugger to your DebugSession
 
