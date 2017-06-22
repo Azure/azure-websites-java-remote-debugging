@@ -9,6 +9,7 @@ Microsoft Azure websites supports running Java Web Applications. This blog descr
 **Prerequisites**
 * Azure website with a Java Web Application with a web.config that enables JVM debug server.
 * Enable websockets on your azure web site.
+* When using ZULU JDK on Azure Webapp, please change bitness of your webapp to 64bit.
 * JDWP compatible debugger like Eclipse/Netbeans.
 * DebugSession Client application (your debugger will connect to this client application).
 * Modify Eclipse Remote Debugging Timeout. Open Eclipse and Go to -> Windows -> Preferences -> Debug ->
@@ -21,6 +22,10 @@ Enable ‘web sockets’ on your azure website
 
 ![alt IMAGEONE](https://github.com/Azure/azure-websites-java-remote-debugging/blob/master/images/enable_websockets.png)
 
+
+Ensure Webapp Bitness is correct
+--------------------------------
+If you selected Zulu JDK, change the bitness of your webapp to 64bit. If not, the remote debugging tool cannot connect to your webapp.
 
 Enable debugging in web.config
 ------------------------------
