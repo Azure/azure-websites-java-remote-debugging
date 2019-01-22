@@ -1,3 +1,11 @@
+**Note:**
+This is a mavenized fork of Azure/azure-websites-java-remote-debugging.
+
+As of 2019-01-22 the tool does not connect to Azure. See [https://github.com/Azure/azure-websites-java-remote-debugging/issues/2](https://github.com/Azure/azure-websites-java-remote-debugging/issues/2)
+
+In this fork, I've updated the referenced libraries to more recent versions and this seems to fix the problem
+
+Also, [this](https://github.com/vaccac/azure-websites-java-remote-debugging/blob/master/web.config) is the web.config file that I used.
 
 
 

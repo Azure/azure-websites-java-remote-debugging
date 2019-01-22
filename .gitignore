@@ -1,0 +1,6 @@
+/target/
+/.settings
+/.classpath
+/.project
+/temp/
+/DebugSession-through-proxy.sh

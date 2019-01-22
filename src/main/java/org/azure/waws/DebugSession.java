@@ -280,6 +280,7 @@ public class DebugSession implements Runnable {
 	public void onError(Session session, Throwable error)
 	{
 		lastException = new Exception("Error communicating with remote. " + error.getMessage());
+		error.printStackTrace();
 		semaphore.release();
 	}
 
@@ -348,10 +349,12 @@ public class DebugSession implements Runnable {
 			semaphore.acquire();
 
 			if (lastException != null) {
+				lastException.printStackTrace();
 				throw lastException;
 			}
 		} catch (Exception e) {
 			log.error(e);
+			e.printStackTrace();
 			throw e;
 		} finally {
 			Terminate();
