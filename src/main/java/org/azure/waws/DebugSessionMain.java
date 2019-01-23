@@ -1,5 +1,9 @@
 package org.azure.waws;
 
+import java.util.logging.Handler;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 import org.apache.commons.cli.BasicParser;
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.CommandLineParser;
@@ -12,6 +16,13 @@ public class DebugSessionMain {
 
 	public static void main(String[] args) {
 		Log log = LogFactory.getLog(DebugSessionMain.class);
+		
+		Logger.getLogger("").setLevel(Level.ALL);
+		for(Handler handler : Logger.getLogger("").getHandlers()) {
+			handler.setLevel(Level.ALL);
+		}
+		
+		
 		CommandLineParser parser = new BasicParser();
 		Options options = new Options();
 		options.addOption("p", "port", true, "local port (required)");
